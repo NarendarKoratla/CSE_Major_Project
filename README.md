@@ -1,59 +1,56 @@
-# NutriVision
+# NutriVision — AI-Powered Malnutrition Screening System
 
-## Project Info
+NutriVision is a final-year CSE project focused on supporting early malnutrition-risk screening using anthropometric inputs. It provides a web interface for presenting screening information and nutrition guidance.
 
-**Description**: NutriVision is an AI-powered malnutrition screening and risk assessment tool designed for healthcare professionals. It integrates a React frontend with a Python (FastAPI) backend to provide comprehensive nutritional analysis.
+> **Important:** This is an educational screening project, not a medical diagnostic tool. Results should not replace assessment by a qualified healthcare professional.
 
+## Goals
+- Support preliminary nutritional-risk screening.
+- Present assessment information in an understandable interface.
+- Provide nutrition awareness and educational guidance.
+- Offer dashboard-style analytics and downloadable reports where implemented.
 
-**Use your preferred IDE**
+## Modules
+- Anthropometric data input
+- Malnutrition-risk prediction
+- Nutrition recommendations
+- Rule-based nutrition chatbot
+- Analytics dashboard
+- PDF report generation
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+The available functionality depends on the current implementation and any separately configured prediction service. Do not use sample results as medical advice.
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## Technology
+The frontend package uses React 18, TypeScript, Vite, Tailwind CSS, Recharts, React Router, shadcn/ui, and Radix UI components.
 
-Follow these steps:
+## Run locally
+### Prerequisites
+- Node.js (LTS recommended)
+- npm
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+### Setup
+```bash
+git clone https://github.com/NarendarKoratla/CSE_Major_Project.git
+cd CSE_Major_Project
+npm install
 npm run dev
 ```
+Vite prints a local development URL in the terminal (commonly `http://localhost:5173`). Open it in your browser.
 
-**Edit a file directly in GitHub**
+### Validate the frontend
+```bash
+npm run lint
+npm run build
+npm run preview
+```
+If a feature depends on a separate backend or machine-learning service, configure and run that service separately. The frontend `package.json` alone does not document backend deployment or model setup.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## Responsible use
+- Enter only data you are authorized to use.
+- Do not commit personal, identifiable, or real patient information.
+- Treat results as preliminary screening support, not a diagnosis.
+- Validate the system with qualified domain experts before real-world healthcare use.
 
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## Deployment
-
-To deploy this project, build the frontend and serve it alongside the backend API.
-
-
-
+## Author
+**Narendar Koratla**  
+[GitHub](https://github.com/NarendarKoratla) · [LinkedIn](https://www.linkedin.com/in/narendar-koratla-63569b384/)
